@@ -15,6 +15,7 @@ int cal2kcal(int cal){
     return 0;
 }
 
+// I STOP HERE...
 
 int main(){
     while(1){
