@@ -1,10 +1,17 @@
 #include <stdio.h>
 
 
-// this function converts joules in calories
+// this function converts calories in joules
 int cal2joules(int cal){
     joules = cal * 4186;
     printf("\n%d cal = %d joules \n", cal, joules);
+    return 0;
+}
+
+// this function converts calories in kcal
+int cal2kcal(int cal){
+    kcal = cal * 10000;
+    printf("\n%d cal = %d kcal \n", cal, kcal);
     return 0;
 }
 
