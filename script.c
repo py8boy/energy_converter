@@ -15,7 +15,12 @@ int cal2kcal(int cal){
     return 0;
 }
 
-// I STOP HERE...
+// this function converts kcal in calories
+int kcal2cal(int kcal){
+    int cal = kcal / 1000;
+    printf("\n%d kcal = %d cal \n", kcal, cal);
+    return 0;
+}
 
 int main(){
     while(1){
