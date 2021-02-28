@@ -67,14 +67,31 @@ int main(){
             switch(operationCode){
                 case 1:
                     cal2joules();
+                    break;
                 case 2:
                     cal2kcal();
+                    break;
                 case 3:
                     kcal2cal();
+                    break;
                 case 4:
-                    joules2cal();   
+                    joules2cal();  
+                    break; 
             }
-        }      
+
+            printf("\nDo you want to continue? [0 to quit / 1 to continue] ");
+            int quittingFlag;
+            scanf("%d", &quittingFlag);
+
+            if(quittingFlag == 0){
+                printf("Okay... Se you later... Quitting... \n");
+                break;
+            }
+            else{
+                printf("Ok, returning... \n\n\n");
+                continue;
+            }
+        }    
     }
     
     return 0;
