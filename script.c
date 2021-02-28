@@ -29,6 +29,13 @@ int joules2kcal(double joules){
     return 0;
 }
 
+// this function converts kcal in joules
+int kcal2joules(double kcal){
+    double joules = kcal / 0.000239;
+    printf("\n%f kcal = %f joules \n", kcal, joules);
+    return 0;
+}
+
 
 int main(){
     while(1){
