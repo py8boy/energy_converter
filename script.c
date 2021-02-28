@@ -2,30 +2,30 @@
 
 
 // this function converts calories in joules
-int cal2joules(int cal){
-    int joules = cal * 4186;
-    printf("\n%d cal = %d joules \n", cal, joules);
+int cal2joules(double cal){
+    double joules = cal * 4186;
+    printf("\n%f cal = %f joules \n", cal, joules);
     return 0;
 }
 
 // this function converts calories in kcal
-int cal2kcal(int cal){
-    int kcal = cal * 10000;
-    printf("\n%d cal = %d kcal \n", cal, kcal);
+int cal2kcal(double cal){
+    double kcal = cal * 10000;
+    printf("\n%f cal = %f kcal \n", cal, kcal);
     return 0;
 }
 
 // this function converts kcal in calories
-int kcal2cal(int kcal){
-    int cal = kcal / 1000;
-    printf("\n%d kcal = %d cal \n", kcal, cal);
+int kcal2cal(double kcal){
+    double cal = kcal / 1000;
+    printf("\n%f kcal = %f cal \n", kcal, cal);
     return 0;
 }
 
 // this function converts joules in kcal
-int joules2kcal(int joules){
+int joules2kcal(double joules){
     double kcal = joules * 0.000239;
-    printf("\n%d joules = %d kcal \n", joules, kcal);
+    printf("\n%f joules = %f kcal \n", joules, kcal);
     return 0;
 }
 
