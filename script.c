@@ -36,6 +36,13 @@ int kcal2joules(double kcal){
     return 0;
 }
 
+// this function converts joules in calories
+int joules2cal(double joules){
+    double cal = joules / 4.189;
+    printf("\n%f joules = %f cal \n", joules, cal);
+    return 0;
+}
+
 
 int main(){
     while(1){
@@ -44,7 +51,8 @@ int main(){
         printf("2 - Calories to Kcal \n");
         printf("3 - Kcal to calories \n");
         printf("4 - Joules to Kcal \n");
-        printf("5 - Kcal to joules \n\n");
+        printf("5 - Kcal to joules \n");
+        printf("6 - Joules to calories \n\n");
 
         printf("What is the operation? ");
         char operationCode = 0;
@@ -56,16 +64,40 @@ int main(){
             continue;
         }
 
-    /*
+    
         switch(operationCode){
             case 1:
+                double calories;
+                printf("Insert the calorie value: ");
+                scanf("%f", &calories);
+                cal2joules(calories);
             case 2:
+                double calories;
+                printf("Insert the calorie value: ");
+                scanf("%f", &calories);
+                cal2kcal(calories);
             case 3:
+                double kilocalories;
+                printf("Insert the kilocalorie value: ");
+                scanf("%f", &kilocalories);
+                kcal2cal(kilocalories);
             case 4:
+                double joules;
+                printf("Insert the joule value: ");
+                scanf("%f", &joules);
+                joules2kcal(joules);
             case 5:
+                double kilocalories;
+                printf("Insert the kilocalorie value: ");
+                scanf("%f", &kilocalories);
+                kcal2joules(kilocalories);
             case 6:
+                double joules;
+                printf("Insert the joule value: ");
+                scanf("%f", &joules);
+                joules2cal(joules);
         }        
-    */
+    
     }
     
     return 0;
