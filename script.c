@@ -3,14 +3,14 @@
 
 // this function converts calories in joules
 int cal2joules(int cal){
-    joules = cal * 4186;
+    int joules = cal * 4186;
     printf("\n%d cal = %d joules \n", cal, joules);
     return 0;
 }
 
 // this function converts calories in kcal
 int cal2kcal(int cal){
-    kcal = cal * 10000;
+    int kcal = cal * 10000;
     printf("\n%d cal = %d kcal \n", cal, kcal);
     return 0;
 }
@@ -29,7 +29,7 @@ int main(){
         printf("What is the operation? ");
         char operationCode = 0;
         scanf("%c", &operationCode);
-        printf("\n\n")
+        printf("\n\n");
 
         if(operationCode < 1 || operationCode > 6){
             printf("Invalid code! Please try again! \n\n");
